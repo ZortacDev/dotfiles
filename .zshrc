@@ -86,3 +86,5 @@ source $ZSH/oh-my-zsh.sh
 #
 # Path configuration
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+
+eval $(thefuck --alias)

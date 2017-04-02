@@ -27,3 +27,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:formatdef_my_custom_c = '"astyle -A14"'
+let g:formatdef_my_custom_cpp = '"astyle -A14"'
+let g:formatters_c = ['my_custom_c']
+let g:formatters_cpp = ['my_custom_cpp']
