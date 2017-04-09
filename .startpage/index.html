@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Startpage</title>
+        <style type="text/css">
+            *{
+                font-family: "Fira Mono", mono;
+                font-size: 22px;
+                background-color: #282828;
+            }
+
+            #links {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            form {
+                width: 300px;
+                margin: 0 auto;
+            }
+
+            input[type=text] {
+                width: 300px;
+                border: 0px;
+                border-bottom: 2px solid #a89984;
+                color: #ebdbb2;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 20%;
+                width: 20%;
+            }
+
+            #frontpage {
+                color: #d65d0e;
+            }
+
+            #pcmr {
+                color: #d79921;
+            }
+
+            #unixporn {
+                color: #b16286;
+            }
+
+            #yt {
+                color: #cc241d;
+            }
+
+            #inbox {
+                color: #458588;
+            }
+
+            #blog {
+                color: #689d6a;
+            }
+
+            #seperator {
+                color: #ebdbb2;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="content">
+                <img src="firefox.png">
+                <div id="links">
+                    <a href="https://reddit.com" id="frontpage">r/frontpage</a>
+                    <a href="https://reddit.com/r/pcmasterrace" id="pcmr">r/pcmr</a>
+                    <a href="https://reddit.com/r/unixporn" id="unixporn">r/unixporn</a>
+                    <br></br>
+                    <a href="https://youtube.com" id="yt">YouTube</a>
+                    <a href="https://inbox.google.com" id="inbox">Inbox</a>
+                    <a href="http://zortac.net" id="blog">zortac.net</a>
+                    <div id="seperator">
+                        ------------------------------
+                    </div>
+                </div>
+                <form method="get" action="https://www.google.de/search">
+                    <input name="q" type="text" id="search" maxlength="180" placeholder="Search..." autocomplete="off" autofocus/>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
