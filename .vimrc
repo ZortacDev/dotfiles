@@ -36,3 +36,8 @@ let g:formatters_cpp = ['my_custom_cpp']
 
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+colorscheme gruvbox
+set background=dark
+highlight Normal ctermbg=NONE guibg=NONE
+highlight NonText ctermbg=NONE guibg=NONE
+set termguicolors

@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "/home/zortac/.vim/bundle/gruvbox"]
+	path = /home/zortac/.vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
