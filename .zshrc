@@ -88,3 +88,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 eval $(thefuck --alias)
+
+# Keep package list updated
+pacman -Qqe > $HOME/.packages.list

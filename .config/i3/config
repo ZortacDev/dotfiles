@@ -157,7 +157,8 @@ new_window 1pixel
 
 exec compton &
 exec --no-startup-id killall polybar
-exec_always --no-startup-id polybar example --config=.config/polybar/config
+exec_always --no-startup-id polybar main --config=.config/polybar/config
+exec_always --no-startup-id polybar secondary --config=.config/polybar/config
 exec feh --bg-scale "$HOME/backgrounds/landscape.jpg"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
