@@ -1,3 +1,4 @@
+set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 execute pathogen#infect()
@@ -32,3 +33,6 @@ let g:formatdef_my_custom_c = '"astyle -A14"'
 let g:formatdef_my_custom_cpp = '"astyle -A14"'
 let g:formatters_c = ['my_custom_c']
 let g:formatters_cpp = ['my_custom_cpp']
+
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
