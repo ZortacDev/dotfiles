@@ -48,7 +48,7 @@ font-1 = "FontAwesome:size=11"
 
 modules-left = i3
 modules-center = date 
-modules-right = volume pkg cpu
+modules-right = volume pkg cpu mail-google mail-iserv
 
 tray-position = right
 tray-padding = 2
@@ -160,6 +160,7 @@ format-foreground = ${colors.foreground}
 label = %date% %time%
 label-font = 3
 label-foreground = ${colors.foreground}
+label-underline = ${colors.primary}
 
 
 [module/volume]
@@ -174,12 +175,13 @@ master-mixer = Master
 mapping = true
 
 format-volume = %{F#5b5b5b} %{F-}<label-volume>
+label-underline = ${colors.primary}
 
 [module/pkg]
 type = custom/script
 interval = 1200
 format = <label>
-format-underline = ${colors.secondary}
+format-underline = ${colors.primary}
 label = "%output:0:30%"
 exec = /home/zortac/.config/polybar/pkg.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
@@ -193,7 +195,7 @@ interval = 0.5
 ;   <bar-load>
 ;   <ramp-load>
 ;   <ramp-coreload>
-format = <label> <ramp-coreload>
+format = <label>
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
@@ -201,11 +203,21 @@ format = <label> <ramp-coreload>
 ;   %percentage-core[1-9]% - load percentage for specific core
 label = %{F#5b5b5b} %{F-}%percentage%%
 
-ramp-coreload-0 = 
-ramp-coreload-1 = 
-ramp-coreload-2 = 
-ramp-coreload-3 = 
-ramp-coreload-4 = 
-ramp-coreload-5 = 
-ramp-coreload-6 = 
-ramp-coreload-7 = 
+
+label-underline = ${colors.primary}
+
+[module/mail-google]
+type = custom/script
+interval = 10
+format = %{F#5b5b5b}%{F-} <label>
+exec = ~/.config/polybar/mail-google
+
+format-underline = ${colors.primary}
+
+[module/mail-iserv]
+type = custom/script
+interval = 10
+format = %{F#5b5b5b}%{F-} <label>
+exec = ~/.config/polybar/mail-iserv
+
+format-underline = ${colors.secondary}

@@ -153,7 +153,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 gaps inner 10
-new_window 1pixel
+new_window pixel 2
+new_float pixel 2
+
+hide_edge_borders none
 
 exec compton &
 exec_always --no-startup-id polybar main --config=.config/polybar/config
@@ -165,3 +168,11 @@ bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# Colors
+client.background   #282828
+client.focused      #cc241d #282828 #cc241d #d65d0e #d65d0e
+client.unfocused    #cc241d #282828 #cc241d #458588 #458588
+client.focused_inactive    #cc241d #282828 #cc241d #458588 #458588
+client.urgent       #cc241d #282828 #cc241d #458588 #458588
+client.placeholder  #cc241d #282828 #cc241d #458588 #458588
