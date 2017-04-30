@@ -70,3 +70,9 @@
 [submodule "/home/zortac/.vim/bundle/gruvbox"]
 	path = /home/zortac/.vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/bundle/vim-auto-save"]
+	path = .vim/bundle/vim-auto-save
+	url = https://github.com/vim-scripts/vim-auto-save
+[submodule ".vim/bundle/vim-dispatch"]
+	path = .vim/bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
